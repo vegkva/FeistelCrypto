@@ -9,3 +9,14 @@ Maybe add possibility for encrypting/decrypting images in the future...
 **This is *NOT* a secure encryption scheme, only a small fun project**  
 The key size used in this cipher is only 32bit
 
+## Demo  
+
+
+### Encryption  
+
+![Screenshot](media/encrypt.gif)  
+
+
+### Decryption  
+
+![Screenshot](media/decrypt.gif)
