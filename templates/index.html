@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" href="{{ url_for('static',filename='styles/mystyle.css') }}" />
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+
+        <body>
+            <form action="#" method="post">
+                <h2>Encrypt/Decrypt</h2>
+                <label for="key">32bit key:</label>
+                <input type="text" id="key" name="key" size="50"><br><br>
+                <br><textarea id="encrypt" rows="10" cols="40" name="encrypt"></textarea><br>
+                <button type="submit" class="button" onclick="this.classList.toggle('button--loading')">
+                    <span class="button__text">Encrypt!</span>
+                </button>
+                <br><br>
+                <br><textarea id="decrypt" rows="10" cols="40" name="decrypt"></textarea><br>
+                <button type="submit" class="button" onclick="this.classList.toggle('button--loading')">
+                    <span class="button__text">Decrypt!</span>
+                </button>
+                <br><br>
+
+                <h3>Encrypted: </h3>
+                <p>{{encrypted}}</p>
+                <h3>Decrypted:</h3>
+                <p>{{decrypted}}</p>
+            </form>
+
+
+        </body>
+
+</html>
